@@ -8,19 +8,6 @@ function Cards() {
       <h1>HERZLICH WILLKOMMEN!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-        <ul className='cards__item-1'>
-            <CardItem 
-              src='images/AsLifeStyle-1_Page_02.jpg'
-              text='
-              ICH BEGRÜSSE SIE ICH HEISSE
-              ALWINA SCHÄFER
-              ANAMNESE BEHANDLUNGEN
-              RATSCHLÄGE EMPFEHLUNGEN
-              TIPPS UND TRICKS'
-              label='Geschäftsleitung'
-              path='/services'
-            />
-          </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/AsLifeStyle-1_Page_03.jpg'
