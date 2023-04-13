@@ -29,9 +29,10 @@
     align-items: center;
   }
   
-  .fa-typo3 {
+  .logo-as {
     margin-left: 0.5rem;
     font-size: 1.8rem;
+    height: 80px;
   }
   
   .nav-menu {
@@ -64,7 +65,7 @@
   }
   
   .fa-bars {
-    color: #f0ddc1;
+    color: #DFB05F;
   }
   
   .nav-links-mobile {
@@ -73,6 +74,7 @@
   
   .menu-icon {
     display: none;
+    visibility: visible;
   }
   
   @media screen and (max-width: 960px) {
@@ -114,6 +116,7 @@
     }
   
     .navbar-logo {
+      display: flex;
       position: absolute;
       top: 0;
       left: 0;
