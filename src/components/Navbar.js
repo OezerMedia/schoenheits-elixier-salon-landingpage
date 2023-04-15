@@ -46,8 +46,8 @@ useEffect(() => {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link smooth to='#products' className='nav-links' onClick={closeMobileMenu}>
-              Products
+            <Link smooth to='#contact' className='nav-links' onClick={closeMobileMenu}>
+              Contact
             </Link>
           </li>
         </ul>

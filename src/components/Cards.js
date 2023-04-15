@@ -26,7 +26,7 @@ function Cards() {
               Microneedling Gesichtsbehandlung für eine vitalisierte und strahlend verjüngte Haut. 
               Die Alternative zu Injektionen und Fillerbehandlungen.'
               label='Microneedling'
-              path='/products'
+              path='/contact'
             />
             <CardItem
               src='images/AsLifeStyle-1_Page_05.jpg'
@@ -53,7 +53,7 @@ function Cards() {
               src='images/AsLifeStyle-1_Page_07.jpg'
               text='PLASMA PEN.'
               label='Plasma Pen'
-              path='/products'
+              path='/contact'
             />
             <CardItem
               src='images/AsLifeStyle-1_Page_08.jpg'
@@ -75,7 +75,7 @@ function Cards() {
               text='Eine regelmässige Detox Kur (Entgiftung/Ausleiten) stellt für den Organismus eine grosse Erleichterung dar. Denn Gifte sind überall um uns herum. In der Luft, der Nahrung, dem Wasser, der Wohnung und in der Kleidung. Viele Gifte kann der Körper selbst ausleiten, aber nicht alle. 
               Die verbleibenden Gifte werden eingelagert und können zu Zellschäden, chronischen Krankheiten führen.'
               label='Detox Kur'
-              path='/products'
+              path='/contact'
             />
           </ul>
         </div>
