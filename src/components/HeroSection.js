@@ -18,9 +18,10 @@ function HeroSection() {
           </div>
           <div className="textbox-second-slide">
             <h5 className="alwina-text">
-              Hi ich bin Alwina, schön dass du hier bist! Willkommen ich heiße
-              Sie willkommen mein Name ist Alwina Schäfer ich biete
-              Anamnesebehandlungen Beratung Empfehlungen Tipps und Tricks
+            Hallo ich bin Alwina, 
+            schön dass du hier bist! 
+            Ich biete Ihnen Anamnese Behandlungen, Beratung, 
+            Empfehlungen, sowie Tipps und Tricks.
             </h5>
           </div>
         </div>

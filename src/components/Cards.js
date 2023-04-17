@@ -78,6 +78,10 @@ function Cards() {
               path='/contact'
             />
           </ul>
+          <p className='footer-subscription-heading'>
+        Die Termine werden immer individuell für jeden Kunden abgestimmt und vergeben.
+Sollte ein Termin nicht zustande kommen, bitte ich Sie, 48 Stunden vorher abzusagen, damit der Termin noch für Kunden zur Verfügung steht und Ihnen keine Stornogebühr berechnet wird.
+        </p>
         </div>
       </div>
     </div>

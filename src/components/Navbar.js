@@ -28,7 +28,7 @@ useEffect(() => {
    <>
     <nav className='navbar'>
       <div className='navbar-container'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link to='#' className='navbar-logo' onClick={closeMobileMenu}>
         <img src="icons/Logo-AS.png" className="logo-as"/>
         </Link>
         <div className='menu-icon' onClick={handlClick}>
@@ -45,11 +45,11 @@ useEffect(() => {
               Services
             </Link>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <Link smooth to='#contact' className='nav-links' onClick={closeMobileMenu}>
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

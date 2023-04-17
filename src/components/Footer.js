@@ -2,118 +2,62 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import HomeIcon from "@mui/icons-material/Home";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
+
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-        Die Termine werden immer individuell für jeden Kunden abgestimmt und vergeben.
-Sollte ein Termin nicht zustande kommen, bitte ich Sie, 48 Stunden vorher abzusagen, damit der Termin noch für Kunden zur Verfügung steht und Ihnen keine Stornogebühr berechnet wird.
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
+
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <h2>Contact</h2>
+            
+            <a href='https://goo.gl/maps/8xj9MTpz1ZLERkTo7'><HomeIcon className='footer-icons'/> Frauengartenstrasse 2 72379 Hechingen</a>
+            
+            <a><PhoneIcon className='footer-icons'/>  +49 174 75 88 339</a> 
+            
+            <a href="mailto:alwina1309@hotmail.de"><EmailIcon className='footer-icons'/>  alwina1309@hotmail.de</a>
           </div>
           <div className='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div className='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <h2>Impressum</h2>
+            <a>Angaben gemäß § 5 TMG</a>
+
+<p className="">Max Muster</p>
+<p className="Anschrift">Musterweg</p>
+<p className="Anschrift">12345 Musterstadt</p>
+<p className="Anschrift">Vertreten durch:</p>
+<p className="Anschrift">Max Muster</p>
+<p className="Kontakt">Kontakt:</p>
+<p className="Kontakt">Telefon: 01234-789456</p>
+<p className="Kontakt">Fax: 1234-56789</p>
+<a href="mailto:max@muster.de" className="Kontakt">E-Mail: max@muster.de</a>
+<p className="Ust-Id">Umsatzsteuer-ID:</p>
+<p className="Musterweg">Umsatzsteuer-Identifikationsnummer </p>
+<p className="Musterweg">gemäß §27a Umsatzsteuergesetz: </p>
+<p className="Musterweg">Musterustid.</p>
+<p className="Musterweg">Wirtschafts-ID:</p>
+<p className="Musterweg">Musterwirtschaftsid</p>
+
           </div>
           <div className='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='/'><InstagramIcon className='footer-icons'/> Instagram</Link>
+            <Link to='/'><FacebookIcon className='footer-icons'/> Facebook</Link>
+            <Link to='/'><YouTubeIcon className='footer-icons'/> Youtube</Link>
+            <Link to='/'><TwitterIcon className='footer-icons'/> Twitter</Link>
           </div>
         </div>
       </div>
-      <section className='social-media'>
-        <div className='social-media-wrap'>
-          <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
-              AS
-              <i className='fab fa-typo3' />
-            </Link>
-          </div>
-          <small className='website-rights'>AS © 2023</small>
-          <div className='social-icons'>
-            <Link
-              className='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i className='fab fa-facebook-f' />
-            </Link>
-            <Link
-              className='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i className='fab fa-instagram' />
-            </Link>
-            <Link
-              className='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i className='fab fa-youtube' />
-            </Link>
-            <Link
-              className='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i className='fab fa-twitter' />
-            </Link>
-            <Link
-              className='social-icon-link linkedin'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i className='fab fa-linkedin' />
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
