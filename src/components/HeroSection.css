@@ -35,7 +35,8 @@
     margin-left: 4px;
 }
 
-.card { /* Weisser Container um  Bild und Text Container*/
+.card {
+    /* Weisser Container um  Bild und Text Container*/
     padding: 4rem;
     background: #fff;
     flex-flow: column;
@@ -51,52 +52,70 @@
 }
 
 
-.container { /* Weisser Container um  Bild und Text*/
+.container {
+    /* Weisser Container um  Bild und Text*/
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+
+    /* border: 3px dashed red; */
+
+}
+
+.image-wrap {
+    /* Umramdung vom Bild */
     display: flex;
     flex-flow: row;
-    align-items: center;
-}
-
-.image-wrap { /* Umramdung vom Bild */
-    position: relative;
-    width: 100%;
-
-
+    width: 1024px;
     overflow: hidden;
+    max-width: auto;
+
+    /* border: 3px dashed green; */
 }
 
-.alwina { /* Bild */
-    margin-bottom: 24px;
-    display: flex;
-    flex: 1;
-    width: 425px;
+.alwina {
+    /* Bild */
+    margin-right: 50%;
+    width: 825px;
     max-width: 100%;
     height: 570px;
+    scale: 102%;
+
     max-height: 100%;
     object-fit: contain;
     transition: all 0.2s linear;
-    border-radius: 10px;
+    background-position: center;
+
+    position: relative;
 
     position: relative;
 
 }
 
-.image__link{ /* Bildumrandung Container*/
+.image__container {
+    /* Bildumrandung Container*/
+
     display: flex;
-    flex-flow: column;
-    width: 425px;
+    flex-direction: row;
+    width: 45%;
     height: 570px;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+
 }
 
-.image-wrap::after {  /* Label auf dem Bild */
+.text__container {
+    margin: 35px;
+}
+
+/* Label auf dem Bild */
+/* .image-wrap::after {  
     content: attr(data-category);
-    position: absolute;
+    
+    position: relative;
+    left: 0;
     bottom: 0;
     margin-left: 10px;
     padding: 6px 8px;
@@ -106,20 +125,23 @@
     color: #fff;
     background-color: #9e9e9e;
     box-sizing: border-box;
-}
+
+} */
 
 .alwina:hover {
     transform: scale(1.1);
 }
 
+
 .alwina-text {
-    display: flex;
-    margin: 0 auto;
+
+
     color: #252e48;
-    font-size: 42px;
-    line-height: 48px;
-    list-style: none;
-    width: 50%;
+    font-size: 38px;
+    line-height: 48x;
+    width: auto;
+    /* border: 3px dashed #1c87c9; */
+
 }
 
 @media screen and (max-width: 960px) {

@@ -5,7 +5,6 @@ import './App.css';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 // import Contact from './components/pages/Contact';
-import SignUp from './components/pages/SignUp';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/services'  component={Services} />
           {/* <Route path='/contact'  component={Contact} /> */}
-          {/* <Route path='/sign-up'  component={SignUp} /> */}
         </Switch>
       </Router>
     </>
