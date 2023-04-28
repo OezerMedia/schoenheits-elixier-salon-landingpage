@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function CardItemFirstPage(props) {
   return (
     <>
-      <div className='container'>
+      <li className='container'>
         <div className='image__container' to={props.path}>
 
 
@@ -24,7 +24,7 @@ function CardItemFirstPage(props) {
           <h5 className='alwina-text'>{props.text}</h5>
 
         </div>
-      </div>
+      </li>
     </>
   );
 }
@@ -34,8 +34,8 @@ function HeroSection() {
     <div className="hero-container">
       <h1>Schönheitselixier Salon</h1>
       <p>By Alwina Schäfer</p>
-      <div className="card">
-              <CardItemFirstPage
+      <ul className="card">
+              <CardItemFirstPage 
                   src='images/AsLifeStyle-1_Page_02.jpg'
                   text='Hallo ich bin Alwina, 
                   schön dass du hier bist! 
@@ -52,7 +52,7 @@ function HeroSection() {
             Empfehlungen, sowie Tipps und Tricks.
             </h5>
           </div> */}
-        </div>
+        </ul>
 
     </div>
   );

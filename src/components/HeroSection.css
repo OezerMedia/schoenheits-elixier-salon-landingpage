@@ -37,70 +37,77 @@
 
 .card {
     /* Weisser Container um  Bild und Text Container*/
-    padding: 4rem;
-    background: #fff;
+    display: flex;
     flex-flow: column;
     align-items: center;
     max-width: auto;
+    padding: 4rem;
     width: 90%;
-    margin-bottom: 24px;
-    position: relative;
     margin: 50px 0 45px;
+    margin-bottom: 24px;
+    background: #fff;
     border-radius: 10px;
-
-    display: grid;
+    
 }
 
 
 .container {
     /* Weisser Container um  Bild und Text*/
     display: flex;
+    position: relative;
     align-items: center;
     margin: 0 auto;
-
-
+    
+    
     /* border: 3px dashed red; */
-
+    
 }
 
 .image-wrap {
     /* Umramdung vom Bild */
     display: flex;
     flex-flow: row;
-    width: 1024px;
+    position: relative;
+    
     overflow: hidden;
-    max-width: auto;
 
-    /* border: 3px dashed green; */
+    border-radius: 10px;
+
+
+    border: 3px dashed blue;
+
+
 }
 
 .alwina {
     /* Bild */
-    margin-right: 50%;
-    width: 825px;
-    max-width: 100%;
-    height: 570px;
-    scale: 102%;
 
-    max-height: 100%;
+
+    max-width: 100%;
+
+
+
+
     object-fit: contain;
     transition: all 0.2s linear;
     background-position: center;
 
     position: relative;
+    border-radius: 10px;
 
-    position: relative;
+    border: 3px dashed green;
+
+
+
 
 }
 
 .image__container {
     /* Bildumrandung Container*/
-
     display: flex;
     flex-direction: row;
     width: 45%;
     height: 570px;
-    border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
 
@@ -111,11 +118,10 @@
 }
 
 /* Label auf dem Bild */
-/* .image-wrap::after {  
+.image-wrap::after {  
     content: attr(data-category);
     
-    position: relative;
-    left: 0;
+    position: absolute;
     bottom: 0;
     margin-left: 10px;
     padding: 6px 8px;
@@ -126,7 +132,7 @@
     background-color: #9e9e9e;
     box-sizing: border-box;
 
-} */
+}
 
 .alwina:hover {
     transform: scale(1.1);
@@ -170,3 +176,21 @@
         width: 100%;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .card {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .container {
+      margin-bottom: 2rem;
+    }
+  }
