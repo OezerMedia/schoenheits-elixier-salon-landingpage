@@ -1,10 +1,9 @@
 .hero-container {
     background: #f0ddc1;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px #f0ddc1;
     object-fit: contain;
@@ -13,11 +12,12 @@
 .hero-container>h1 {
     color: #fff;
     font-size: 100px;
-    margin-top: -100px;
 }
 
 .hero-container>p {
+    text-align: center;
     margin-top: 8px;
+    margin-bottom: 48px;
     color: #fff;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -35,92 +35,58 @@
     margin-left: 4px;
 }
 
-.card {
-    /* Weisser Container um  Bild und Text Container*/
+.image__container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: auto;
-    padding: 4rem;
     width: 90%;
-    margin: 50px 0 45px;
-    margin-bottom: 24px;
-    background: #fff;
-    border-radius: 10px;
-    
-}
-
-
-.container {
-    /* Weisser Container um  Bild und Text*/
-    display: flex;
-    position: relative;
-    align-items: center;
     margin: 0 auto;
-    
-    
-    /* border: 3px dashed red; */
-    
+    background: #fff;
 }
 
-.image-wrap {
-    /* Umramdung vom Bild */
+.image__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+    /* border: 3px dashed rgb(134, 50, 64); */
+}
+
+/* Weisser Container um  Bild und Text Container*/
+.card {
+    margin-bottom: 24px;
+}
+
+/* Weisser Container um  Bild und Text*/
+.image__item__container {
     display: flex;
-    flex-flow: row;
-    position: relative;
-    
-    overflow: hidden;
-
-    border-radius: 10px;
-
-
-    border: 3px dashed blue;
-
-
+    max-width: 30vh;
+    height: 40vh;
+    flex-basis: 100%;
+    margin-left: 4vh;
 }
 
-.alwina {
-    /* Bild */
-
-
-    max-width: 100%;
-
-
-
-
-    object-fit: contain;
-    transition: all 0.2s linear;
-    background-position: center;
-
-    position: relative;
+.text__item__container {
+    display: flex;
+    align-items: center;
     border-radius: 10px;
-
-    border: 3px dashed green;
-
-
-
-
 }
 
-.image__container {
+.image__text__container {
     /* Bildumrandung Container*/
     display: flex;
-    flex-direction: row;
-    width: 45%;
-    height: 570px;
+    width: 100%;
     overflow: hidden;
-    text-decoration: none;
-
 }
 
-.text__container {
-    margin: 35px;
+.figure__image__wrap {
+    /* Umramdung vom Bild */
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
 }
 
-/* Label auf dem Bild */
-.image-wrap::after {  
+.figure__image__wrap::after {
     content: attr(data-category);
-    
     position: absolute;
     bottom: 0;
     margin-left: 10px;
@@ -131,26 +97,42 @@
     color: #fff;
     background-color: #9e9e9e;
     box-sizing: border-box;
-
 }
 
-.alwina:hover {
+/* Bild */
+.ceo__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: all 0.2s linear;
+    /* border: 3px dashed green; */
+}
+
+.ceo__image:hover {
     transform: scale(1.1);
 }
 
+.text__container {
+    margin: 35px;
+    padding: 20px 30px 30px;
+}
 
-.alwina-text {
-
-
+.description_ceo_text {
     color: #252e48;
     font-size: 38px;
     line-height: 48x;
-    width: auto;
     /* border: 3px dashed #1c87c9; */
-
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1231px) {
     .hero-container>h1 {
         font-size: 70px;
         margin-top: -150px;
@@ -179,18 +161,19 @@
 
 @media only screen and (min-width: 1200px) {
     .content__blog__container {
-      width: 84%;
+        width: 84%;
     }
-  }
-  
-  @media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1360px) {
     .card {
-      display: flex;
+        display: flex;
     }
-  }
-  
-  @media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 1360px) {
     .container {
-      margin-bottom: 2rem;
+        margin: auto;
     }
-  }
+}

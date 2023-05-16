@@ -1,28 +1,28 @@
 import React from "react";
 import "../App.css";
 import "./HeroSection.css";
-import { Label } from "@mui/icons-material";
-import { Link } from 'react-router-dom';
-
 
 function CardItemFirstPage(props) {
   return (
     <>
-      <li className='container'>
-        <div className='image__container' to={props.path}>
-
-
-          <figure className='image-wrap' data-category={props.label}>
-            <img
-              className='alwina'
-              alt='Travel Image'
-              src={props.src}
-            />
+      <div className="image__item__container">
+        <div className="image__text__container" to={props.path}>
+          <figure className="figure__image__wrap" data-category={props.label}>
+            <img className="ceo__image" alt="CEO Image" src={props.src} />
           </figure>
         </div>
-        <div className="text__container">
-          <h5 className='alwina-text'>{props.text}</h5>
-
+      </div>
+    </>
+  );
+}
+function CardItemTextFirstPage(props) {
+  return (
+    <>
+      <li className="text__item__container">
+        <div className="image__text__container" to={props.path}>
+          <div className="text__container">
+            <h5 className="description_ceo_text">{props.text}</h5>
+          </div>
         </div>
       </li>
     </>
@@ -34,26 +34,22 @@ function HeroSection() {
     <div className="hero-container">
       <h1>Schönheitselixier Salon</h1>
       <p>By Alwina Schäfer</p>
-      <ul className="card">
-              <CardItemFirstPage 
-                  src='images/AsLifeStyle-1_Page_02.jpg'
-                  text='Hallo ich bin Alwina, 
+      <div className="image__container">
+        <div className="image__wrapper">
+          <ul className="card">
+            <CardItemFirstPage
+              src="images/AsLifeStyle-1_Page_02.jpg"
+              label="Geschäftsführerin"
+            />
+            <CardItemTextFirstPage
+              text="Hallo ich bin Alwina, 
                   schön dass du hier bist! 
                   Ich biete Ihnen Anamnese Behandlungen, Beratung, 
-                  Empfehlungen, sowie Tipps und Tricks.'
-                  label='Geschäftsführerin'
-                />
-                {/* <img className="alwina" src={"images/AsLifeStyle-1_Page_02.jpg"} /> */}
-          {/* <div className="textbox-second-slide">
-            <h5 className="alwina-text">
-            Hallo ich bin Alwina, 
-            schön dass du hier bist! 
-            Ich biete Ihnen Anamnese Behandlungen, Beratung, 
-            Empfehlungen, sowie Tipps und Tricks.
-            </h5>
-          </div> */}
-        </ul>
-
+                  Empfehlungen, sowie Tipps und Tricks."
+            />
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
